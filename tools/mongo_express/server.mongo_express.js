@@ -57,7 +57,7 @@ function MongoExpress (self, done) {
       baseUrl: process.env.SITE_BASEURL || '/',
       cookieKeyName: 'mongo-express',
       cookieSecret: process.env.SITE_COOKIESECRET || 'cookiesecret',
-      host: process.env.VCAP_APP_HOST || 'localhost',
+      host: process.env.VCAP_APP_HOST || '52.211.38.127',
       port: process.env.VCAP_APP_PORT || 8081,
       requestSizeLimit: process.env.REQUEST_SIZE || '50mb',
       sessionSecret: process.env.SITE_SESSIONSECRET || 'sessionsecret',

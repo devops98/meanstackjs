@@ -1,6 +1,6 @@
 module.exports = {
   tags: ['login'],
-  'Localhost Check:login': function (browser) {
+  '52.211.38.127 Check:login': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)
@@ -10,7 +10,7 @@ module.exports = {
       .verify.elementNotPresent('.error')
       .end()
   },
-  'Localhost Check:validate': function (browser) {
+  '52.211.38.127 Check:validate': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)
@@ -71,7 +71,7 @@ module.exports = {
       .verify.elementPresent('.ng-valid-pattern')
       .end()
   },
-  'Localhost Check:validate & submit': function (browser) {
+  '52.211.38.127 Check:validate & submit': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)
@@ -95,7 +95,7 @@ module.exports = {
       .assert.containsText('#toast-container', 'Invalid email or password')
       .end()
   },
-  'Localhost Action:signup': function (browser) {
+  '52.211.38.127 Action:signup': function (browser) {
     browser
       .url(browser.launch_url + 'signup')
       .waitForElementVisible('body', 3000)
@@ -114,7 +114,7 @@ module.exports = {
       .click('button[type=submit]')
       .end()
   },
-  'Localhost Action:login & update(Seeded Account)': function (browser) {
+  '52.211.38.127 Action:login & update(Seeded Account)': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)
@@ -139,7 +139,7 @@ module.exports = {
       .assert.containsText('#toast-container', 'jason greenpioneer your profile has be saved')
       .end()
   },
-  'Localhost Check:logout(Seeded Account)': function (browser) {
+  '52.211.38.127 Check:logout(Seeded Account)': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)
@@ -157,7 +157,7 @@ module.exports = {
       .verify.visible('#signup')
       .end()
   },
-  'Localhost Action:login & update(Signed Up Account)': function (browser) {
+  '52.211.38.127 Action:login & update(Signed Up Account)': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)
@@ -182,7 +182,7 @@ module.exports = {
       .assert.containsText('#toast-container', 'info greenpioneer your profile has be saved')
       .end()
   },
-  'Localhost Check:logout(Signed Up Account)': function (browser) {
+  '52.211.38.127 Check:logout(Signed Up Account)': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)
@@ -200,7 +200,7 @@ module.exports = {
       .verify.visible('#signup')
       .end()
   },
-  'Localhost Check:verify(Signed Up Account)': function (browser) {
+  '52.211.38.127 Check:verify(Signed Up Account)': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 3000)

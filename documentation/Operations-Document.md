@@ -425,7 +425,7 @@ set NODE_ENE=test // WINDOWS
 
 ``` javascript
 // Development example
-var mongodbUri = process.env.DB_PORT_27017_TCP_ADDR || process.env.MONGODB || process.env.MONGOLAB_URI || 'mongodb://localhost/dev'
+var mongodbUri = process.env.DB_PORT_27017_TCP_ADDR || process.env.MONGODB || process.env.MONGOLAB_URI || 'mongodb://52.211.38.127/dev'
 module.exports = {
   minify: 'default', // 'concat' all files or 'minify' concat and minfy  or 'default' leave as is
   html: {
@@ -532,8 +532,8 @@ var baseLine = {
   root: path.join(__dirname, '/../../..'),
   // Server IP
   ip: process.env.IP || '0.0.0.0',
-  hostname: process.env.HOST || process.env.HOSTNAME || 'localhost',
-  // Enable Swagger.io at localhost:[port]/api/
+  hostname: process.env.HOST || process.env.HOSTNAME || '52.211.38.127',
+  // Enable Swagger.io at 52.211.38.127:[port]/api/
   swagger: true,
   // Enable the use of babel for ES6
   babel: {
@@ -785,8 +785,8 @@ var baseLine = {
         }
       }
     },
-    from: 'MEANSTACKJS@localhost.com',
-    error: 'MEANSTACKJS@localhost.com',
+    from: 'MEANSTACKJS@52.211.38.127.com',
+    error: 'MEANSTACKJS@52.211.38.127.com',
     connect: {
       host: 'smtp.mandrillapp.com', // Gmail, SMTP
       port: '587',
@@ -1349,7 +1349,7 @@ var request = require('supertest')
 describe('USERS', function () {
   describe('GET /api/authenticate', function () {
     it('should be returning unauthenticated', function (done) {
-      request('localhost:3002/')
+      request('52.211.38.127:3002/')
         .get('api/authenticate')
         .expect(200, function (err, res) {
           if (err) return done(err)
@@ -5320,7 +5320,7 @@ self.app.use(function (err, req, res, next) {
 
 #### server.error.js:log - system error log
 
-We log every issue for you now in the database under the `error` collection. In doing that we wanted to give admins a place to view there data instead of just in a log(we still log out the error too). check out the [Dashboard](http://localhost:3000/admin?view=errors). We know that some errors will repeat so we check for the same message seeing as that is our main indicator of what happened. If we find the same one again we will update the count and add a timestamp to the history. With this in place you will now have the ability to add back in the logic we have commented out to allowing you to email yourself when you think its worth knowing about with your own rules on the data. Check it out and let us know your thoughts.
+We log every issue for you now in the database under the `error` collection. In doing that we wanted to give admins a place to view there data instead of just in a log(we still log out the error too). check out the [Dashboard](http://52.211.38.127:3000/admin?view=errors). We know that some errors will repeat so we check for the same message seeing as that is our main indicator of what happened. If we find the same one again we will update the count and add a timestamp to the history. With this in place you will now have the ability to add back in the logic we have commented out to allowing you to email yourself when you think its worth knowing about with your own rules on the data. Check it out and let us know your thoughts.
 ### Testing
 
 #### NPM Test / Everything
@@ -5940,14 +5940,14 @@ NOTE- VERSION 1.0 will be published within the week
 #1 added nightwatch.js e2e
 #24 added mongo express server to give you admin db view in dev mode
 #26 create and update the environment & settings js
-#27 added plato to analyze code at localhost:3000/plato
-#28  can check the reporter of night watch at localhost:3000/e2e
+#27 added plato to analyze code at 52.211.38.127:3000/plato
+#28  can check the reporter of night watch at 52.211.38.127:3000/e2e
 #30 Updated & Reorder the server and client side code
 
 
 #### Apr 15th 16 - v0.2.1
 #20 Added Babel for es6 support on the server side
-#22 Added swagger at localhost:3000/api/
+#22 Added swagger at 52.211.38.127:3000/api/
 #23 Added Dockerfile
 
 

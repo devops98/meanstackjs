@@ -16,7 +16,7 @@ before_script:
   - tar -xvf /tmp/mongodb.tgz
   - mkdir /tmp/data
   - ${PWD}/mongodb-linux-x86_64-3.6.3/bin/mongod --dbpath /tmp/data  &
-  - until nc -z localhost 27017; do echo Waiting for MongoDB; sleep 1; done
+  - until nc -z 52.211.38.127 27017; do echo Waiting for MongoDB; sleep 1; done
   - npm i -g nsp
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0

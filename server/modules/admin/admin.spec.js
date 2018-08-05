@@ -4,7 +4,7 @@ var request = require('supertest')
 describe('Admin', function () {
   describe('GET /api/admin/users', function () {
     it('should be returning no users - unauthorized', function (done) {
-      request('localhost:3000/')
+      request('52.211.38.127:3000/')
         .get('api/admin/users')
         .expect(401, function (error, res) {
           if (error) return done(error)
@@ -15,7 +15,7 @@ describe('Admin', function () {
   })
   describe('GET /api/admin/users', function () {
     it('should be returning no errors - unauthorized', function (done) {
-      request('localhost:3000/')
+      request('52.211.38.127:3000/')
         .get('api/admin/errors')
         .expect(401, function (error, res) {
           if (error) return done(error)

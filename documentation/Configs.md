@@ -54,7 +54,7 @@ set NODE_ENE=test // WINDOWS
 
 ``` javascript
 // Development example
-var mongodbUri = process.env.DB_PORT_27017_TCP_ADDR || process.env.MONGODB || process.env.MONGOLAB_URI || 'mongodb://localhost/dev'
+var mongodbUri = process.env.DB_PORT_27017_TCP_ADDR || process.env.MONGODB || process.env.MONGOLAB_URI || 'mongodb://52.211.38.127/dev'
 module.exports = {
   minify: 'default', // 'concat' all files or 'minify' concat and minfy  or 'default' leave as is
   html: {
@@ -161,8 +161,8 @@ var baseLine = {
   root: path.join(__dirname, '/../../..'),
   // Server IP
   ip: process.env.IP || '0.0.0.0',
-  hostname: process.env.HOST || process.env.HOSTNAME || 'localhost',
-  // Enable Swagger.io at localhost:[port]/api/
+  hostname: process.env.HOST || process.env.HOSTNAME || '52.211.38.127',
+  // Enable Swagger.io at 52.211.38.127:[port]/api/
   swagger: true,
   // Enable the use of babel for ES6
   babel: {
@@ -414,8 +414,8 @@ var baseLine = {
         }
       }
     },
-    from: 'MEANSTACKJS@localhost.com',
-    error: 'MEANSTACKJS@localhost.com',
+    from: 'MEANSTACKJS@52.211.38.127.com',
+    error: 'MEANSTACKJS@52.211.38.127.com',
     connect: {
       host: 'smtp.mandrillapp.com', // Gmail, SMTP
       port: '587',

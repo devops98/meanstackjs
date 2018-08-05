@@ -228,14 +228,14 @@ NOTE- VERSION 1.0 will be published within the week
 #1 added nightwatch.js e2e
 #24 added mongo express server to give you admin db view in dev mode
 #26 create and update the environment & settings js
-#27 added plato to analyze code at localhost:3000/plato
-#28  can check the reporter of night watch at localhost:3000/e2e
+#27 added plato to analyze code at 52.211.38.127:3000/plato
+#28  can check the reporter of night watch at 52.211.38.127:3000/e2e
 #30 Updated & Reorder the server and client side code
 
 
 #### Apr 15th 16 - v0.2.1
 #20 Added Babel for es6 support on the server side
-#22 Added swagger at localhost:3000/api/
+#22 Added swagger at 52.211.38.127:3000/api/
 #23 Added Dockerfile
 
 

@@ -1,6 +1,6 @@
 module.exports = {
   // tags: ['admin'],
-  // 'Localhost Check:login check admin as admin': function (browser) {
+  // '52.211.38.127 Check:login check admin as admin': function (browser) {
   //   browser
   //     .url(browser.launch_url + 'signin')
   //     .waitForElementVisible('body', 3000)
@@ -22,7 +22,7 @@ module.exports = {
   //     .assert.containsText('body', 'jason@greenpioneersolutions.com')
   //     .end()
   // },
-  // 'Localhost Check:login check admin as user': function (browser) {
+  // '52.211.38.127 Check:login check admin as user': function (browser) {
   //   browser
   //     .url(browser.launch_url + 'signin')
   //     .waitForElementVisible('body', 3000)
@@ -39,7 +39,7 @@ module.exports = {
   //     .verify.hidden('#admin')
   //     .end()
   // },
-  // 'Localhost Check:login check admin page - not authorized': function (browser) {
+  // '52.211.38.127 Check:login check admin page - not authorized': function (browser) {
   //   browser
   //     .url(browser.launch_url + 'signin')
   //     .waitForElementVisible('body', 3000)

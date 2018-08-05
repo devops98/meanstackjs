@@ -1,6 +1,6 @@
 module.exports = {
   tags: ['seo'],
-  'Localhost Check SEO:blog list': function (browser) {
+  '52.211.38.127 Check SEO:blog list': function (browser) {
     browser
       .url(browser.launch_url + '/blog/list')
       .waitForElementVisible('body', 1000)
@@ -8,7 +8,7 @@ module.exports = {
       .verify.visible('.container')
       .end()
   },
-  'Localhost Check SEO:404': function (browser) {
+  '52.211.38.127 Check SEO:404': function (browser) {
     browser
       .url(browser.launch_url + '404')
       .waitForElementVisible('body', 1000)
@@ -16,7 +16,7 @@ module.exports = {
       .verify.visible('.container')
       .end()
   },
-  'Localhost Check SEO:500': function (browser) {
+  '52.211.38.127 Check SEO:500': function (browser) {
     browser
       .url(browser.launch_url + '500')
       .waitForElementVisible('body', 1000)
@@ -24,7 +24,7 @@ module.exports = {
       .verify.visible('.container')
       .end()
   },
-  'Localhost Check SEO:signin': function (browser) {
+  '52.211.38.127 Check SEO:signin': function (browser) {
     browser
       .url(browser.launch_url + 'signin')
       .waitForElementVisible('body', 1000)
@@ -32,7 +32,7 @@ module.exports = {
       .verify.visible('.container')
       .end()
   },
-  'Localhost Check SEO:signup': function (browser) {
+  '52.211.38.127 Check SEO:signup': function (browser) {
     browser
       .url(browser.launch_url + 'signup')
       .waitForElementVisible('body', 1000)

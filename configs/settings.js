@@ -16,7 +16,7 @@ var baseLine = {
       active: true,
       options: {
         // origin: function (origin, callback) {
-        //   var originIsWhitelisted = ['http://localhost:3000', 'localhost:3000'].indexOf(origin) !== -1
+        //   var originIsWhitelisted = ['http://52.211.38.127:3000', '52.211.38.127:3000'].indexOf(origin) !== -1
         //   callback(null, originIsWhitelisted)
         // }
       },
@@ -67,8 +67,8 @@ var baseLine = {
   root: path.join(__dirname, '/../../..'),
   // Server IP
   ip: process.env.IP || '0.0.0.0',
-  hostname: process.env.HOST || process.env.HOSTNAME || 'localhost',
-  // Enable Swagger.io at localhost:[port]/api/
+  hostname: process.env.HOST || process.env.HOSTNAME || '52.211.38.127',
+  // Enable Swagger.io at 52.211.38.127:[port]/api/
   swagger: true,
   // Enable the use of babel for ES6
   babel: {
@@ -335,8 +335,8 @@ var baseLine = {
         }
       }
     },
-    from: process.env.EMAIL_FROM || 'MEANSTACKJS@localhost.com',
-    error: process.env.EMAIL_ERROR || 'MEANSTACKJS@localhost.com',
+    from: process.env.EMAIL_FROM || 'MEANSTACKJS@52.211.38.127.com',
+    error: process.env.EMAIL_ERROR || 'MEANSTACKJS@52.211.38.127.com',
     connect: {
       host: process.env.EMAIL_HOST || 'smtp.mandrillapp.com', // Gmail, SMTP
       port: process.env.EMAIL_PORT || '587',

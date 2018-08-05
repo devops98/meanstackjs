@@ -4,7 +4,7 @@ var request = require('supertest')
 describe('USERS', function () {
   describe('GET /api/user', function () {
     it('should be returning unauthenticated', function (done) {
-      request('localhost:3000/')
+      request('52.211.38.127:3000/')
         .get('api/user/authenticate')
         .expect(200, function (error, res) {
           if (error) return done(error)
@@ -15,7 +15,7 @@ describe('USERS', function () {
         })
     })
     it('should be returning token', function (done) {
-      request('localhost:3000/')
+      request('52.211.38.127:3000/')
         .get('api/user/token')
         .expect(401, function (error, res) {
           if (error) return done(error)

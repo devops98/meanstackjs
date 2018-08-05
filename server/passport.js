@@ -60,7 +60,7 @@ exports.passportStrategy = new LocalStrategy({ usernameField: 'email' }, functio
 //   clientID: process.env.AZURE_ID,
 //   responseType: 'code id_token',
 //   responseMode: 'form_post',
-//   redirectUrl: 'http://localhost:3000/api/auth/link/azure/callback',
+//   redirectUrl: 'http://52.211.38.127:3000/api/auth/link/azure/callback',
 //   allowHttpForRedirectUrl: true,
 //   clientSecret: process.env.AZURE_SECRET,
 //   passReqToCallback: true,

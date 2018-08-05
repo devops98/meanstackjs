@@ -6,7 +6,7 @@ const options = {
   verbose: true
 }
 
-a11y('http://localhost:3000/', options, (err, reports) => {
+a11y('http://52.211.38.127:3000/', options, (err, reports) => {
   if (err)console.log(err)
   console.log(reports)
 })

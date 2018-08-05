@@ -1,7 +1,7 @@
 {
   "name": "meanstackjs-agenda",
   "version": "1.0.0",
-  "description": " Used to set up  agenda to manage light-weight job scheduling with a nice ui. http://localhost:3000/agenda",
+  "description": " Used to set up  agenda to manage light-weight job scheduling with a nice ui. http://52.211.38.127:3000/agenda",
   "main": "index.js",
   "active": true,
   "author": "Green Pioneer <info@greenpioneersolutions.com>",
